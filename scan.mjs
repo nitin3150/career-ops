@@ -16,6 +16,7 @@
  */
 
 import { readFileSync, writeFileSync, appendFileSync, existsSync, mkdirSync } from 'fs';
+import { createInterface } from 'readline';
 import yaml from 'js-yaml';
 const parseYaml = yaml.load;
 
@@ -81,6 +82,7 @@ function parseGreenhouse(json, companyName) {
     url: j.absolute_url || '',
     company: companyName,
     location: j.location?.name || '',
+    postedAt: j.first_published || j.updated_at || null,
   }));
 }
 
@@ -91,6 +93,7 @@ function parseAshby(json, companyName) {
     url: j.jobUrl || '',
     company: companyName,
     location: j.location || '',
+    postedAt: j.publishedAt || null,
   }));
 }
 
@@ -101,6 +104,7 @@ function parseLever(json, companyName) {
     url: j.hostedUrl || '',
     company: companyName,
     location: j.categories?.location || '',
+    postedAt: j.createdAt ? new Date(j.createdAt).toISOString() : null,
   }));
 }
 
@@ -118,6 +122,42 @@ async function fetchJson(url) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+// ── Date filter ─────────────────────────────────────────────────────
+
+async function resolveDays(args) {
+  const idx = args.indexOf('--days');
+  if (idx !== -1) {
+    const val = args[idx + 1];
+    if (val === 'all' || val === '0') return 0;
+    const n = parseInt(val, 10);
+    return isNaN(n) ? 0 : n;
+  }
+  if (!process.stdin.isTTY) return 0;
+  const rl = createInterface({ input: process.stdin, output: process.stdout });
+  return new Promise((resolve) => {
+    console.log('\nTime filter — only show postings from:');
+    console.log('  1) Last 24 hours');
+    console.log('  2) Last 48 hours');
+    console.log('  3) Last 3 days');
+    console.log('  4) Last 7 days');
+    console.log('  5) All time (no filter)');
+    rl.question('\nSelect (1-5) [5]: ', (answer) => {
+      rl.close();
+      const map = { '1': 1, '2': 2, '3': 3, '4': 7, '5': 0, '': 0 };
+      resolve(map[answer.trim()] ?? 0);
+    });
+  });
+}
+
+function buildDateFilter(days) {
+  if (!days) return null;
+  const cutoff = Date.now() - days * 24 * 60 * 60 * 1000;
+  return (postedAt) => {
+    if (!postedAt) return true;
+    return new Date(postedAt).getTime() >= cutoff;
+  };
 }
 
 // ── Title filter ────────────────────────────────────────────────────
@@ -254,6 +294,8 @@ async function main() {
   const dryRun = args.includes('--dry-run');
   const companyFlag = args.indexOf('--company');
   const filterCompany = companyFlag !== -1 ? args[companyFlag + 1]?.toLowerCase() : null;
+  const days = await resolveDays(args);
+  const dateFilter = buildDateFilter(days);
 
   // 1. Read portals.yml
   if (!existsSync(PORTALS_PATH)) {
@@ -285,6 +327,7 @@ async function main() {
   const date = new Date().toISOString().slice(0, 10);
   let totalFound = 0;
   let totalFiltered = 0;
+  let totalDateFiltered = 0;
   let totalDupes = 0;
   const newOffers = [];
   const errors = [];
@@ -297,6 +340,10 @@ async function main() {
       totalFound += jobs.length;
 
       for (const job of jobs) {
+        if (dateFilter && !dateFilter(job.postedAt)) {
+          totalDateFiltered++;
+          continue;
+        }
         if (!titleFilter(job.title)) {
           totalFiltered++;
           continue;
@@ -329,11 +376,13 @@ async function main() {
   }
 
   // 6. Print summary
+  const filterLabel = days === 0 ? 'all time' : days === 1 ? 'last 24h' : `last ${days} days`;
   console.log(`\n${'━'.repeat(45)}`);
-  console.log(`Portal Scan — ${date}`);
+  console.log(`Portal Scan — ${date} (${filterLabel})`);
   console.log(`${'━'.repeat(45)}`);
   console.log(`Companies scanned:     ${targets.length}`);
   console.log(`Total jobs found:      ${totalFound}`);
+  if (days > 0) console.log(`Filtered by date:      ${totalDateFiltered} removed`);
   console.log(`Filtered by title:     ${totalFiltered} removed`);
   console.log(`Duplicates:            ${totalDupes} skipped`);
   console.log(`New offers added:      ${newOffers.length}`);
