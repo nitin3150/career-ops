@@ -1,0 +1,189 @@
+=== career-ops batch runner ===
+Parallel: 3 | Max retries: 2
+Input: 1066 offers
+
+Pending: 48 offers
+
+--- Processing offer #1019: https://jobs.ashbyhq.com/procurify/36f109d4-4024-4bfe-986c-6997c02b9967 (report 271, attempt 1)
+--- Processing offer #1020: https://jobs.ashbyhq.com/everai/694c19b7-d94f-4f66-97a7-5c881b0811bf (report 272, attempt 1)
+--- Processing offer #1021: https://jobs.ashbyhq.com/langchain/0a5dd30c-6da1-4095-bd96-b16f27eeb333 (report 273, attempt 1)
+    ⏭️  Skipped (score: 1.5 < min-score: 3)
+--- Processing offer #1022: https://jobs.ashbyhq.com/lorikeet/a00d35af-2d47-4ed6-8d99-2cb1fb86e44f (report 274, attempt 1)
+    ✅ Completed (score: -, report: 271)
+--- Processing offer #1023: https://jobs.ashbyhq.com/lavendo/f0374fa5-f8b8-4f42-b6fb-898721ef6a10 (report 275, attempt 1)
+    ⏭️  Skipped (score: 2.5 < min-score: 3)
+--- Processing offer #1024: https://jobs.ashbyhq.com/adaptive-ml/360ea776-27f1-4869-900f-6ebb78267aa2 (report 276, attempt 1)
+    ⏭️  Skipped (score: 2.5 < min-score: 3)
+--- Processing offer #1025: https://jobs.ashbyhq.com/owkin/d2467bc5-6e95-4a4f-8164-061e0262ab19 (report 277, attempt 1)
+    ⏭️  Skipped (score: 2.5 < min-score: 3)
+--- Processing offer #1026: https://jobs.ashbyhq.com/tavily/ea19ba06-293e-4129-a7db-b4f7ae57a720 (report 278, attempt 1)
+    ✅ Completed (score: 3.25, report: 276)
+--- Processing offer #1027: https://jobs.ashbyhq.com/auctor/73648a39-a671-469d-aa7d-f7bb8b3b6d46 (report 279, attempt 1)
+    ⏭️  Skipped (score: 2.0 < min-score: 3)
+--- Processing offer #1028: https://jobs.ashbyhq.com/reflectionai/9e0c3947-a4ca-4c09-b0e8-dfaf634f33d7 (report 280, attempt 1)
+    ✅ Completed (score: 4.0, report: 279)
+--- Processing offer #1029: https://jobs.ashbyhq.com/reflectionai/8b97b583-3cc6-4834-ae2c-d5aecf22ed7d (report 281, attempt 1)
+    ⏭️  Skipped (score: 2.0 < min-score: 3)
+--- Processing offer #1030: https://jobs.ashbyhq.com/v7labs.com/c26d2c49-eaae-438c-9aa0-4dafbea315bc (report 282, attempt 1)
+    ✅ Completed (score: 3.8, report: 280)
+--- Processing offer #1031: https://jobs.ashbyhq.com/fireworks.ai/da851441-e231-4205-9717-3aa860bed6fe (report 283, attempt 1)
+    ✅ Completed (score: -, report: 282)
+--- Processing offer #1032: https://jobs.ashbyhq.com/cohere/1fa01a03-9253-4f62-8f10-0fe368b38cb9 (report 284, attempt 1)
+    ✅ Completed (score: 4.0, report: 281)
+--- Processing offer #1033: https://jobs.ashbyhq.com/taktile/5a16ec1c-d81d-44b2-8c24-19e832e49c38 (report 285, attempt 1)
+    ✅ Completed (score: 3.9, report: 283)
+--- Processing offer #1034: https://jobs.ashbyhq.com/n8n/5d501d74-cb30-4c14-8ff9-508f647b34a9 (report 286, attempt 1)
+    ✅ Completed (score: -, report: 284)
+--- Processing offer #1035: https://jobs.ashbyhq.com/n8n/69607328-f9fa-4788-8a6e-8b2d7a102969 (report 287, attempt 1)
+    ✅ Completed (score: -, report: 285)
+--- Processing offer #1036: https://jobs.ashbyhq.com/n8n/92208273-951b-4388-935b-037624fe1725 (report 288, attempt 1)
+    ⏭️  Skipped (score: 2.0 < min-score: 3)
+--- Processing offer #1037: https://jobs.ashbyhq.com/synthflow/b0cb2768-ac18-42a3-94b2-5e627f24023c (report 289, attempt 1)
+    ⏭️  Skipped (score: 2.5 < min-score: 3)
+--- Processing offer #1038: https://jobs.ashbyhq.com/livekit/b889ef16-4d5d-4b71-b0a9-682026a0a1ee (report 290, attempt 1)
+    ⏭️  Skipped (score: 2.5 < min-score: 3)
+--- Processing offer #1039: https://jobs.ashbyhq.com/salient/a213eea8-ef18-40cb-b693-67ca3900c7fb (report 291, attempt 1)
+    ⏭️  Skipped (score: 2.2 < min-score: 3)
+--- Processing offer #1040: https://jobs.ashbyhq.com/superdial/6129fe25-3ad0-4ab9-8548-fe97ce370711 (report 292, attempt 1)
+    ⏭️  Skipped (score: 2.6 < min-score: 3)
+--- Processing offer #1041: https://jobs.ashbyhq.com/assembledhq/ea904973-4574-4a4f-8350-a0272b20ca56 (report 293, attempt 1)
+    ✅ Completed (score: 3.8, report: 291)
+--- Processing offer #1042: https://jobs.ashbyhq.com/baseten/84c1801c-1a65-49fb-aaaa-beeafd530e7e (report 294, attempt 1)
+    ✅ Completed (score: 3.1, report: 292)
+--- Processing offer #1043: https://jobs.ashbyhq.com/openai/d2ab1c9b-5c0c-4b43-a7c3-c9301854c023 (report 295, attempt 1)
+    ⏭️  Skipped (score: 2.0 < min-score: 3)
+--- Processing offer #1044: https://jobs.ashbyhq.com/perplexity/aa511ea8-96e3-42ba-b28f-5e222170bcee (report 296, attempt 1)
+    ✅ Completed (score: -, report: 294)
+--- Processing offer #1045: https://jobs.ashbyhq.com/deepgram/8884965c-8a55-414c-ba86-a52d527f5dff (report 297, attempt 1)
+    ✅ Completed (score: -, report: 295)
+--- Processing offer #1046: https://job-boards.greenhouse.io/smartsheet/jobs/7833978 (report 298, attempt 1)
+    ✅ Completed (score: 4.1, report: 296)
+--- Processing offer #1047: https://job-boards.greenhouse.io/postscript/jobs/8445410002 (report 299, attempt 1)
+    ⏭️  Skipped (score: 1.6 < min-score: 3)
+--- Processing offer #1048: https://job-boards.greenhouse.io/workato/jobs/8320989002 (report 300, attempt 1)
+    ⏭️  Skipped (score: 2.5 < min-score: 3)
+--- Processing offer #1049: https://job-boards.greenhouse.io/trace3/jobs/6163178 (report 301, attempt 1)
+    ⏭️  Skipped (score: 1.0 < min-score: 3)
+--- Processing offer #1050: https://job-boards.greenhouse.io/cresta/jobs/4759347008 (report 302, attempt 1)
+    ⏭️  Skipped (score: 1.5 < min-score: 3)
+--- Processing offer #1051: https://job-boards.greenhouse.io/smartsheet/jobs/7798778 (report 303, attempt 1)
+    ⏭️  Skipped (score: 2.8 < min-score: 3)
+--- Processing offer #1052: https://job-boards.greenhouse.io/devrev/jobs/5528192004 (report 304, attempt 1)
+    ✅ Completed (score: 4.5, report: 302)
+--- Processing offer #1053: https://job-boards.greenhouse.io/mercury/jobs/5888354004 (report 305, attempt 1)
+    ✅ Completed (score: 3.3, report: 303)
+--- Processing offer #1054: https://job-boards.greenhouse.io/hightouch/jobs/5542602004 (report 306, attempt 1)
+    ⏭️  Skipped (score: 1.5 < min-score: 3)
+--- Processing offer #1055: https://job-boards.greenhouse.io/nebius/jobs/4381327101 (report 307, attempt 1)
+    ✅ Completed (score: -, report: 304)
+--- Processing offer #1056: https://job-boards.greenhouse.io/assemblyai/jobs/4664024005 (report 308, attempt 1)
+    ✅ Completed (score: 4.4, report: 306)
+--- Processing offer #1057: https://job-boards.greenhouse.io/workato/jobs/8516229002 (report 309, attempt 1)
+    ⏭️  Skipped (score: 1.6 < min-score: 3)
+--- Processing offer #1058: https://job-boards.greenhouse.io/saasgroup/jobs/4774181101 (report 310, attempt 1)
+    ⏭️  Skipped (score: 1.5 < min-score: 3)
+--- Processing offer #1059: https://job-boards.greenhouse.io/grafanalabs/jobs/5689200004 (report 311, attempt 1)
+    ✅ Completed (score: -, report: 308)
+--- Processing offer #1060: https://jobs.lever.co/mistral/77f6fd1b-65cf-45d8-9b68-594c62732f62 (report 312, attempt 1)
+    ⏭️  Skipped (score: 1.5 < min-score: 3)
+--- Processing offer #1061: https://jobs.lever.co/agiloft/e85a0460-4a4c-48b4-a42e-0ff4f124d890 (report 313, attempt 1)
+    ✅ Completed (score: -, report: 311)
+--- Processing offer #1062: https://remotive.com/remote/jobs/software-development/forward-deployed-engineer-4430608 (report 314, attempt 1)
+    ✅ Completed (score: 3.2, report: 313)
+--- Processing offer #1063: https://remotive.com/remote/jobs/ai-ml/ai-forward-deployed-engineer-4437170 (report 315, attempt 1)
+    ✅ Completed (score: 3.8, report: 312)
+--- Processing offer #1064: https://www.workatastartup.com/jobs/87890 (report 316, attempt 1)
+    ✅ Completed (score: -, report: 314)
+--- Processing offer #1065: https://euremotejobs.com/job/solutions-architect-emea/ (report 317, attempt 1)
+    ⏭️  Skipped (score: 2.2 < min-score: 3)
+--- Processing offer #1066: https://www.fwddeploy.com/jobs/forward-deployed-engineer-emea-2cf9d5cf (report 318, attempt 1)
+    ✅ Completed (score: 3.2, report: 316)
+    ⏭️  Skipped (score: 2.0 < min-score: 3)
+    ⏭️  Skipped (score: 1.8 < min-score: 3)
+
+=== Merging tracker additions ===
+📊 Existing: 62 entries, max #2039
+📥 Found 48 pending additions
+➕ Add #2040: Procurify — Senior AI Engineer (2.0/5)
+⏭️  Skip: EverAI — Senior AI Product Manager (Image & Video) (existing #103 4.8 >= new 1.5)
+⏭️  Skip: LangChain — Solutions Architect (Remote) (existing #103 4.8 >= new 2.5)
+⏭️  Skip: Lorikeet — Solutions Architect (existing #103 4.8 >= new 2.5)
+➕ Add #2041: Lavendo — Solutions Architect – AI Agents Deployment (2.5/5)
+⏭️  Skip: Adaptive ML — Forward Deployed AI Engineer (existing #103 4.8 >= new 3.25)
+➕ Add #2042: Owkin — Senior Forward Deployed Engineer (2.0/5)
+⏭️  Skip: Tavily — Forward Deployed Engineer, Partnerships (existing #103 4.8 >= new 2)
+➕ Add #2043: Auctor — Forward Deployed Engineer (4.0/5)
+🔄 Update: #2038 Reflection AI — Forward Deployed Engineer | LLM Post-training (0→3.8)
+➕ Add #2044: Reflection AI — Forward Deployed Engineer | AI Engineer (4.0/5)
+⏭️  Skip: V7 Labs — Forward Deployed Engineer (existing #103 4.8 >= new 2)
+➕ Add #2045: Fireworks AI — MTS, Evals & Post-Training Product (3.9/5)
+➕ Add #2046: Cohere — Applied AI Engineer – Agentic Workflows (3.9/5)
+➕ Add #2047: Taktile — Senior Forward Deployed Engineer (3.0/5)
+⏭️  Skip: n8n — Senior AI Engineer (existing #103 4.8 >= new 2.5)
+⏭️  Skip: n8n — Senior AI Engineer (existing #103 4.8 >= new 2)
+➕ Add #2048: n8n — Senior AI Engineer (TS/Vue/NodeJS) (2.5/5)
+➕ Add #2049: Synthflow AI — Forward Deployed Engineer (2.2/5)
+🔄 Update: #2038 LiveKit — Forward Deployed Engineer (0→2.6)
+⏭️  Skip: Salient — Forward Deployed Software Engineer (existing #103 4.8 >= new 3.8)
+➕ Add #2050: SuperDial — Senior Voice AI Engineer (3.1/5)
+⏭️  Skip: Assembled — Software Engineer - Voice AI Agent (existing #103 4.8 >= new 2)
+⏭️  Skip: Baseten — Forward Deployed Engineer (existing #103 4.8 >= new 3.9)
+➕ Add #2051: OpenAI — Forward Deployed Engineer (FDE), Life Sciences (2.0/5)
+🔄 Update: #99 Perplexity — MTS (Forward Deployed Engineer, Applied AI) (4→4.1)
+➕ Add #2052: Deepgram — Solutions Engineer, Enterprise (2.5/5)
+➕ Add #2053: Smartsheet — Senior Product Manager - Applied AI (1.6/5)
+➕ Add #2054: Postscript — Senior Product Manager, AI (1.5/5)
+➕ Add #2055: Workato — Senior Forward Deployed Engineer (1.0/5)
+⏭️  Skip: Trace3 — Solutions Architect | AI (existing #103 4.8 >= new 2.8)
+➕ Add #2056: Cresta — Senior Forward Deployed Engineer (AI Agent) (4.5/5)
+⏭️  Skip: Smartsheet — Senior Forward Deployed AI Engineer (existing #103 4.8 >= new 3.3)
+➕ Add #2057: DevRev — Forward Deployed Architect (3.2/5)
+⏭️  Skip: Mercury — AI Solutions Architect (existing #103 4.8 >= new 1.5)
+⏭️  Skip: Hightouch — Software Engineer, AI Agents (existing #103 4.8 >= new 4.4)
+⏭️  Skip: Nebius — Senior/Staff ML Engineer (LLMs & Agentic Systems) (existing #103 4.8 >= new 1.6)
+➕ Add #2058: AssemblyAI — Applied AI Engineer (2.5/5)
+⏭️  Skip: Workato — Staff Automation Engineer (existing #103 4.8 >= new 1.5)
+➕ Add #2059: saas.group — Senior IT Systems & Automation Engineer (1.5/5)
+➕ Add #2060: Grafana Labs — Staff AI Engineer (Grafana Ops, AI/ML) (3.8/5)
+⏭️  Skip: Mistral AI — Applied AI, Forward Deployed ML Engineer - EMEA (existing #191 4 >= new 3.8)
+➕ Add #2061: Agiloft — Forward Deployed Engineer - AI Solutions (3.2/5)
+➕ Add #2062: Qdrant — Forward Deployed Engineer (3.0/5)
+➕ Add #2063: Boomi — AI Forward Deployed Engineer (2.2/5)
+➕ Add #2064: Dot — Forward Deployed AI Engineer (3.2/5)
+➕ Add #2065: Deepgram — Solutions Architect - EMEA (1.8/5)
+➕ Add #2066: Dash0 — Forward Deployed Engineer - EMEA (2.0/5)
+
+✅ Moved 48 TSVs to merged/
+
+📊 Summary: +27 added, 🔄2 updated, ⏭️18 skipped
+
+=== Verifying pipeline integrity ===
+
+📊 Checking 89 entries in applications.md
+
+❌ #2044: Non-canonical status "4.0/5"
+❌ #2038: Non-canonical status "3.8/5"
+⚠️  Possible duplicates: #2044, #2038 (Reflection AI — Forward Deployed Engineer)
+✅ All report links valid
+❌ #2044: Invalid score format: "AI Engineer"
+❌ #2026: Invalid score format: "❌"
+❌ #2027: Invalid score format: "❌"
+❌ #2028: Invalid score format: "❌"
+❌ #2029: Invalid score format: "❌"
+❌ #2030: Invalid score format: "❌"
+❌ #2031: Invalid score format: "❌"
+❌ #2032: Invalid score format: "❌"
+❌ #2033: Invalid score format: "❌"
+❌ #2038: Invalid score format: "LLM Post-training"
+✅ All rows properly formatted
+✅ No pending TSVs
+✅ No bold in scores
+
+==================================================
+📊 Pipeline Health: 12 errors, 1 warnings
+🔴 Pipeline has errors — fix before proceeding
+⚠️  Verification found issues (see above)
+
+=== Batch Summary ===
+Total: 1152 | Completed: 30 | Failed: 126 | Pending: 996
+Average score: 3.7/5 (17 scored)

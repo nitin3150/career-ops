@@ -163,13 +163,23 @@ function buildDateFilter(days) {
 // ── Title filter ────────────────────────────────────────────────────
 
 function buildTitleFilter(titleFilter) {
-  const positive = (titleFilter?.positive || []).map(k => k.toLowerCase());
-  const negative = (titleFilter?.negative || []).map(k => k.toLowerCase());
+  // Use word-boundary regex for short keywords (≤3 chars) to prevent
+  // substring false positives: "KI" in "speaking"/"UKI", "AI" in "chain"
+  function toMatcher(k) {
+    const lower = k.toLowerCase();
+    if (lower.length <= 3) {
+      const re = new RegExp(`\\b${lower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+      return (s) => re.test(s);
+    }
+    return (s) => s.toLowerCase().includes(lower);
+  }
+
+  const positive = (titleFilter?.positive || []).map(toMatcher);
+  const negative = (titleFilter?.negative || []).map(toMatcher);
 
   return (title) => {
-    const lower = title.toLowerCase();
-    const hasPositive = positive.length === 0 || positive.some(k => lower.includes(k));
-    const hasNegative = negative.some(k => lower.includes(k));
+    const hasPositive = positive.length === 0 || positive.some(m => m(title));
+    const hasNegative = negative.some(m => m(title));
     return hasPositive && !hasNegative;
   };
 }

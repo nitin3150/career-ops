@@ -1,0 +1,9 @@
+=== career-ops batch runner ===
+Parallel: 1 | Max retries: 2
+Input: 1013 offers
+
+Pending: 986 offers
+
+--- Processing offer #1: https://jobs.ashbyhq.com/bland/804fbd27-027e-4de5-8a6f-77241a65e599 (report 073, attempt 1)
+    ✅ Completed (score: -, report: 073)
+--- Processing offer #3: https://jobs.ashbyhq.com/bland/681dfcda-f016-4bda-826e-7e813fae0083 (report 074, attempt 1)

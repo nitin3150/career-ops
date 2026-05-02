@@ -1,0 +1,29 @@
+# Applications Tracker
+
+| # | Date | Company | Role | Score | Status | PDF | Report | Notes |
+|---|------|---------|------|-------|--------|-----|--------|-------|
+| 1 | 2026-04-14 | LangChain | Fullstack SWE, Applied AI | 4.3/5 | Evaluated | ❌ | [001](reports/001-langchain-2026-04-14.md) | Top fit — verify posting still live; H1B sponsor confirmed |
+| 2 | 2026-04-20 | FriendliAI | Software Engineer, AI Agents | 4.5/5 | Evaluated | ✅ | [002](reports/002-friendliai-2026-04-20.md) | Strong agentic fit; doc understanding + LangGraph match |
+| 3 | 2026-04-20 | Vapi | Agent Engineer | 2.8/5 | Evaluated | ❌ | [003](reports/003-vapi-2026-04-20.md) | Pre-sales SA mismatch — apply to Vapi FDE instead |
+| 4 | 2026-04-20 | Bland AI | Forward Deployed Engineer | 4.1/5 | Evaluated | ❌ | [004](reports/004-bland-ai-2026-04-20.md) | Strong LLM/multi-agent fit; confirm H1B |
+| 5 | 2026-04-20 | Bland AI | Customer Engineer | 2.2/5 | Evaluated | ❌ | [007](reports/007-bland-customer-engineer-2026-04-20.md) | Support role mismatch |
+| 8 | 2026-04-20 | Vapi | Member of Technical Staff, FDE | 3.6/5 | Evaluated | ✅ | [010](reports/010-vapi-fde-2026-04-20.md) | Build Vapi demo first; $150-300K |
+| 14 | 2026-04-20 | PolyAI | Forward Deployed AI Engineer | 3.4/5 | Evaluated | ✅ | [014](reports/014-polyai-fde-2026-04-20.md) | Build SIP demo first |
+| 17 | 2026-04-20 | Airtable | AI Agent Architect, CX | 3.7/5 | Evaluated | ✅ | [021](reports/021-airtable-2026-04-20.md) | Strong LLMOps/RAG match; $177-278K |
+| 21 | 2026-04-20 | ElevenLabs | Forward Deployed Engineer | 3.8/5 | Evaluated | ✅ | [034](reports/034-elevenlabs-2026-04-20.md) | Strong FDE fit; voice gap learnable |
+| 34 | 2026-04-20 | ElevenLabs | Forward Deployed Engineer | 3.4/5 | Evaluated | ✅ | [040](reports/040-elevenlabs-2026-04-20.md) | Strong fit; verify posting active |
+| 60 | 2026-04-20 | Parloa | Senior/Lead FDE - US | 2.8/5 | Evaluated | ✅ | [062](reports/062-parloa-2026-04-20.md) | 7+ yr req hard blocker |
+| 41 | 2026-04-20 | Airtable | AI Agent Architect, CX | 3.7/5 | Evaluated | ✅ | [021](reports/021-airtable-2026-04-20.md) | Repeat entry |
+| 90 | 2026-04-21 | General Intelligence | Applied AI Engineer - Agent | 3.8/5 | Evaluated | ❌ | - | Strong LangGraph match, NYC |
+| 91 | 2026-04-21 | G2i | AI Engineer | 3.8/5 | Evaluated | ❌ | - | Python/agents match, remote |
+| 92 | 2026-04-21 | G2i | Senior SWE (AI/LLMs) | 3.5/5 | Evaluated | ❌ | - | Senior track |
+| 93 | 2026-04-21 | Gorgias | AI Engineer | 3.0/5 | Evaluated | ❌ | - | Paris hybrid concern |
+| 94 | 2026-04-21 | Perplexity | MTS (AI Inference Engineer) | 4.2/5 | Evaluated | ❌ | - | $210-385K, NYC/SF, Python/Rust/CUDA match |
+| 95 | 2026-04-21 | Perplexity | MTS (AI Infrastructure Engineer) | 4.0/5 | Evaluated | ❌ | - | $210-385K, infra + systems match |
+| 96 | 2026-04-21 | Glean | Founding Forward Deployed Engineer | 4.2/5 | Evaluated | ❌ | - | $160-270K, 0-to-1 builder, strong fit |
+| 97 | 2026-04-21 | Palantir | Forward Deployed AI Engineer | 3.5/5 | Evaluated | ❌ | - | $205-486K, London - verify H1B/UK visa |
+| 98 | 2026-04-21 | Palantir | Forward Deployed Software Engineer | 3.5/5 | Evaluated | ❌ | - | $205-486K, similar to above |
+| 99 | 2026-04-21 | Perplexity | MTS (Forward Deployed Engineer) | 4.0/5 | Evaluated | ❌ | - | $210-385K, applied AI focus |
+| 100 | 2026-04-21 | Mistral AI | AI Developer Advocate | 2.5/5 | Evaluated | ❌ | - | DevRel, not IC engineering |
+| 101 | 2026-04-21 | Glean | Manager, AI Outcomes | 2.0/5 | Evaluated | ❌ | - | People manager role, not IC |
+| 102 | 2026-04-21 | Wayve | Customer Integration Engineer | 2.5/5 | Evaluated | ❌ | - | Customer-facing, autonomous vehicles |
